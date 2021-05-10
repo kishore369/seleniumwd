@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3" verbose="2">
+<listeners>
+
+<listener class-name="test.Listeners"/>
+
+</listeners>
+
+  <test   name="personalloan">
+  <parameter name="URL" value="personalloan.com"/>
+ 
+ 
+    <classes>
+      <class name="test.day1">
+      <methods>
+          <include name="Demo"/>
+      </methods>
+      
+      </class>
+      <class name="test.day2"/>
+      <class name="test.day3"/>
+    </classes>
+  </test> 
+  
+  <test name="CarLoan">
+  <parameter name="URL" value="CarLoan.com"/>
+  <parameter name="password" value="12345"/>
+  <classes>
+  
+  <class name="test.day4">
+  
+  <methods>
+  
+       <exclude name="LoginApi.*"/>
+  
+  </methods>
+  
+  </class>
+  </classes>
+  
+  
+  
+  
+  
+  
+  </test>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->
