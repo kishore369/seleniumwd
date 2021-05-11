@@ -10,6 +10,7 @@ public class day5
 		System.out.println("gamechanger and spirituality");
 		System.out.println("ecstacy");
 		System.out.println("rebel");
+		System.out.println("profanity");
 	}
 
 }
